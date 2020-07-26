@@ -6,8 +6,10 @@ import Col from 'react-bootstrap/Col';
 import './App.scss';
 
 import InfoCard from './components/InfoCard/InfoCard';
+import PersonCard from './components/PersonCard/PersonCard';
 
 import TECHNOLOGIES from './constants/technologies';
+import DEVELOPERS from './constants/developers';
 
 const AgencyBanner = () => (
   <div className="agency-banner">
@@ -62,11 +64,28 @@ const Technologies = () => (
   </div>
 );
 
+const Developers = () => (
+  <div className="developers">
+    <Container fluid>
+      <h1 className="developers__title">*** Drill-down of our technical skills can be provided in a separate discussion.</h1>
+
+      <Row>
+        {DEVELOPERS.map(dev => (
+          <Col xs={12} md={3} key={dev.name}>
+            <PersonCard {...dev} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  </div>
+);
+
 const App = () => (
 <>
   <AgencyBanner />
   <About />
   <Technologies />
+  <Developers />
 </>
 );
 
