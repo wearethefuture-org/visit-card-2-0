@@ -8,6 +8,7 @@ import './App.scss';
 import InfoCard from './components/InfoCard/InfoCard';
 import PersonCard from './components/PersonCard/PersonCard';
 import GridList from './components/GridList/GridList';
+import Footer from './components/Footer/Footer';
 
 import TECHNOLOGIES from './constants/technologies';
 import DEVELOPERS from './constants/developers';
@@ -98,6 +99,7 @@ const App = () => (
   <Technologies />
   <Developers />
   <WorkWith />
+  <Footer />
 </>
 );
 
