@@ -1,5 +1,8 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './App.scss';
 
 const AgencyBanner = () => (
@@ -10,9 +13,35 @@ const AgencyBanner = () => (
   </div>
 );
 
+const About = () => (
+  <div className="about">
+    <Container fluid>
+      <h1 className="about__title">Who we are?</h1>
+
+      <div className="about__sub-title">
+        <p>Ambitios Ukrainian IT company,</p>
+        <p>starting the  path of digital transformation</p>
+        <p>of your ideas</p>
+      </div>
+
+      <div className="we-can-better">
+        <Row>
+          <Col xs={12} sm={3} className="we-can-better__info">We’ll help you grow and enhance your business using best practices staring from usage of modern technologies and ending with best Agile practices for organizational needs.</Col>
+          <Col xs={12} sm={6} className="we-can-better__img">
+            <img src="/assets/imgs/we-can-better.jpg" alt="We can better"/>
+            <h1 className="we-can-better__title">We can better</h1>
+          </Col>
+          <Col xs={12} sm={3} className="we-can-better__info">10+ of true professionals with solid technical background in different domains - SaaS applications, complex web projects, DevOps solutions.</Col>
+        </Row>
+      </div>
+    </Container>
+  </div>
+);
+
 const App = () => (
 <>
   <AgencyBanner />
+  <About />
 </>
 );
 
