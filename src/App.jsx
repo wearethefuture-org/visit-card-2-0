@@ -5,6 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './App.scss';
 
+import InfoCard from './components/InfoCard/InfoCard';
+
+import TECHNOLOGIES from './constants/technologies';
+
 const AgencyBanner = () => (
   <div className="agency-banner">
     <h1 className="agency-banner__title">We Are the Future</h1>
@@ -38,10 +42,31 @@ const About = () => (
   </div>
 );
 
+const Technologies = () => (
+  <div className="technologies">
+    <Container fluid>
+      <h1 className="technologies__title">Technologies</h1>
+      <div className="technologies__sub-title">
+        <p>We are working with different modern technologies you can</p>
+        <p>be interested in:</p>
+      </div>
+
+      <Row>
+        {TECHNOLOGIES.map(tech => (
+          <Col xs={12} md={3} key={tech.title}>
+            <InfoCard {...tech} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  </div>
+);
+
 const App = () => (
 <>
   <AgencyBanner />
   <About />
+  <Technologies />
 </>
 );
 
