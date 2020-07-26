@@ -180,3 +180,34 @@
     }
   }
 }
+
+.work-with {
+  position: relative;
+  padding: 50px 0 100px 0;
+  background-image: url('/assets/imgs/laptop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  > * {
+    position: relative;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: #001604, $alpha: .85);
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 200;
+    font-size: 51px;
+    text-align: center;
+    letter-spacing: 1.188px;
+    color: #FFD412;
+  }
+}

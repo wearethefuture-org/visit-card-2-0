@@ -7,9 +7,11 @@ import './App.scss';
 
 import InfoCard from './components/InfoCard/InfoCard';
 import PersonCard from './components/PersonCard/PersonCard';
+import GridList from './components/GridList/GridList';
 
 import TECHNOLOGIES from './constants/technologies';
 import DEVELOPERS from './constants/developers';
+import WORKS_WITH from './constants/works-with';
 
 const AgencyBanner = () => (
   <div className="agency-banner">
@@ -80,12 +82,22 @@ const Developers = () => (
   </div>
 );
 
+const WorkWith = () => (
+  <div className="work-with">
+    <Container fluid>
+      <h1 className="work-with__title">Who we work with</h1>
+      <GridList items={WORKS_WITH} />
+    </Container>
+  </div>
+);
+
 const App = () => (
 <>
   <AgencyBanner />
   <About />
   <Technologies />
   <Developers />
+  <WorkWith />
 </>
 );
 
