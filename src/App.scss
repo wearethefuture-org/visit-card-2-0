@@ -1,0 +1,56 @@
+@import './vars';
+
+.agency-banner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/assets/imgs/banner-girl-worker.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: #002406, $alpha: .68);
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 60px #01FF2A;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      font-size: 50px;
+    }
+  }
+
+  &__logo {
+    margin-top: 4rem;
+
+    @media (max-width: $sm) {
+      scale: .8;
+      margin-top: 2rem;
+    }
+  }
+
+  &__scroller {
+    position: absolute;
+    bottom: 2rem;
+    cursor: pointer;
+  }
+}
