@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: normal;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0;
+  padding: 0;
+}
