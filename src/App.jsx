@@ -8,6 +8,7 @@ import './App.scss';
 import InfoCard from './components/InfoCard/InfoCard';
 import PersonCard from './components/PersonCard/PersonCard';
 import GridList from './components/GridList/GridList';
+import ContactForm from './components/ContactForm/ContactForm';
 import Footer from './components/Footer/Footer';
 
 import TECHNOLOGIES from './constants/technologies';
@@ -18,6 +19,7 @@ const AgencyBanner = () => (
   <div className="agency-banner">
     <h1 className="agency-banner__title">We Are the Future</h1>
     <ReactSVG src='/assets/svgs/logos/banner-logo.svg' className="agency-banner__logo" />
+    {/* TODO animation on hover */}
     <ReactSVG src='/assets/svgs/scroll-down.svg' className="agency-banner__scroller" />
   </div>
 );
@@ -92,6 +94,16 @@ const WorkWith = () => (
   </div>
 );
 
+const Contact = () => (
+  <div className="contact-us">
+    <div className="contact-us__inner">
+      <h1 className="contact-us__title">Feel free to contact Us!</h1>
+      <h1 className="contact-us__subtitle">We’ll be glad to assist you with the implementation of your dreams!</h1>
+      <ContactForm />
+    </div>
+  </div>
+);
+
 const App = () => (
 <>
   <AgencyBanner />
@@ -99,6 +111,7 @@ const App = () => (
   <Technologies />
   <Developers />
   <WorkWith />
+  <Contact />
   <Footer />
 </>
 );
