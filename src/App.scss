@@ -1,7 +1,15 @@
 @import './vars';
 
 .main-page-bg-1 {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(180deg, #002406 0%, rgba(0, 36, 6, 0.871589) 35.76%, rgba(0, 36, 6, 0) 100%);
+
+  > img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .main-page-bg-2 {
@@ -11,6 +19,7 @@
 
 .main-page-bg-3 {
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: '';
@@ -21,6 +30,12 @@
     right: 0;
     background: linear-gradient(180deg, #002406 0%, rgba(0, 36, 6, 0.871589) 35.76%, rgba(0, 36, 6, 0) 100%);
     transform: rotate(180deg);
+  }
+
+  > img {
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 
@@ -167,22 +182,7 @@
   @media (max-width: $sm) {
     padding-top: 4rem;
   }
-}
 
-.developers {
-  padding: 7rem 0;
-
-  &__title {
-    margin-bottom: 8rem;
-    font-weight: 500;
-    font-size: 18px;
-    color: #002406;
-    text-align: center;
-  }
-}
-
-.technologies,
-.developers {
   [class*="col"] {
     @media (max-width: $md) {
       &:nth-child(n + 2) {
@@ -197,6 +197,57 @@
 
       &:nth-child(n + 4) {
         margin-top: 5rem;
+      }
+    }
+  }
+}
+
+.developers {
+  padding: 7rem 0;
+
+  &__title {
+    margin-bottom: 8rem;
+    font-weight: 500;
+    font-size: 18px;
+    color: #002406;
+    text-align: center;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 24rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 200px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 500;
+    font-size: 400px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.11;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+
+  [class*="col"] {
+    @media (max-width: $md) {
+      &:nth-child(n + 2) {
+        margin-top: 5rem;
+      }
+    }
+
+    @media (min-width: $md) {
+      &:nth-child(3n + 2) {
+        margin: 0 12.5%;
+      }
+
+      &:nth-child(n + 4) {
+        margin-top: 15rem;
       }
     }
   }

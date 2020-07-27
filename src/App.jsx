@@ -78,6 +78,7 @@ const Developers = () => (
     <Container fluid>
       <h1 className="developers__title">*** Drill-down of our technical skills can be provided in a separate discussion.</h1>
 
+      <div className="developers__bg">Team</div>
       <Row>
         {DEVELOPERS.map(dev => (
           <Col xs={12} md={3} key={dev.name}>
@@ -112,10 +113,12 @@ const App = () => (
 <>
   <AgencyBanner />
   <div className="main-page-bg-1">
+    <img src="/assets/imgs/Group.png" alt="circles"/>
     <About />
     <Technologies />
   </div>
   <div className="main-page-bg-3">
+    <img src="/assets/imgs/Group.png" alt=""/>
     <Developers />
     <WorkWith />
   </div>
