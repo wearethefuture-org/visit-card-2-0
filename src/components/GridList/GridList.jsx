@@ -4,7 +4,7 @@ import './GridList.scss';
 const GridList = ({ items }) => (
   <div className="grid-list">
     {items.map(item => (
-      <div className="grid-list__item">
+      <div key={item.title} className="grid-list__item">
         <h1 className="grid-list__title">{item.title}</h1>
         <h2 className="grid-list__text">{item.text}</h2>
       </div>

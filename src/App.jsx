@@ -15,12 +15,11 @@ import TECHNOLOGIES from './constants/technologies';
 import DEVELOPERS from './constants/developers';
 import WORKS_WITH from './constants/works-with';
 
-const AgencyBanner = () => (
+const AgencyBanner = ({ onClickScroller }) => (
   <div className="agency-banner">
     <h1 className="agency-banner__title">We Are the Future</h1>
     <ReactSVG src='/assets/svgs/logos/banner-logo.svg' className="agency-banner__logo" />
-    {/* TODO animation on hover */}
-    <ReactSVG src='/assets/svgs/scroll-down.svg' className="agency-banner__scroller" />
+    <ReactSVG onClick={onClickScroller} src='/assets/svgs/scroll-down.svg' className="agency-banner__scroller" />
   </div>
 );
 
@@ -109,22 +108,31 @@ const Contact = () => (
   </div>
 );
 
-const App = () => (
-<>
-  <AgencyBanner />
-  <div className="main-page-bg-1">
-    <img src="/assets/imgs/Group.png" alt="circles"/>
-    <About />
-    <Technologies />
-  </div>
-  <div className="main-page-bg-3">
-    <img src="/assets/imgs/Group.png" alt=""/>
-    <Developers />
-    <WorkWith />
-  </div>
-  <Contact />
-  <Footer />
-</>
-);
+const App = () => {
+  const moveToAbout = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
+
+  return (
+    <>
+      <AgencyBanner onClickScroller={moveToAbout} />
+      <div className="main-page-bg-1">
+        <img src="/assets/imgs/Group.png" alt="circles"/>
+        <About />
+        <Technologies />
+      </div>
+      <div className="main-page-bg-3">
+        <img src="/assets/imgs/Group.png" alt=""/>
+        <Developers />
+        <WorkWith />
+      </div>
+      <Contact />
+      <Footer />
+    </>
+  );
+};
 
 export default App;
