@@ -8,7 +8,7 @@ import './App.scss';
 import InfoCard from './components/InfoCard/InfoCard';
 import PersonCard from './components/PersonCard/PersonCard';
 import GridList from './components/GridList/GridList';
-import ContactForm from './components/ContactForm/ContactForm';
+// import ContactForm from './components/ContactForm/ContactForm';
 import Footer from './components/Footer/Footer';
 
 import TECHNOLOGIES from './constants/technologies';
@@ -103,7 +103,34 @@ const Contact = () => (
     <div className="contact-us__inner">
       <h1 className="contact-us__title">Feel free to contact Us!</h1>
       <h1 className="contact-us__subtitle">We’ll be glad to assist you with the implementation of your dreams!</h1>
-      <ContactForm />
+
+      <Row className="contact-us__social">
+        <Col>
+          <a href="mailto:weathefuture@gmail.com">
+            <ReactSVG src='/assets/svgs/social/gmail.svg' />
+          </a>
+          <h1>Gmail</h1>
+          <a href="mailto:weathefuture@gmail.com">
+            <h2>weathefuture@gmail.com</h2>
+          </a>
+        </Col>
+
+        <Col>
+          <a href="https://www.linkedin.com/in/ihor-zharyi-6892aa168/">
+            <ReactSVG src='/assets/svgs/social/link.svg' />
+          </a>
+          <h1>Linkedin</h1>
+          <a href="https://www.linkedin.com/in/ihor-zharyi-6892aa168/">
+            <h2>Open</h2>
+          </a>
+        </Col>
+
+        <Col>
+          <ReactSVG src='/assets/svgs/social/skype.svg' />
+          <h1>Skype</h1>
+          <h2>Login: sixteen883</h2>
+        </Col>
+      </Row>
     </div>
   </div>
 );

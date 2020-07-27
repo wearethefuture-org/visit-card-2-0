@@ -339,4 +339,35 @@
       font-size: 18px;
     }
   }
+
+  &__social {
+    .col {
+      text-align: center;
+      color: #fff;
+
+      h1 {
+        @media (max-width: $sm) {
+          font-size: 14px;
+        }
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-top: 10px;
+
+        @media (max-width: $sm) {
+          font-size: 7px;
+        }
+      }
+    }
+
+    a {
+      color: inherit;
+    }
+
+    svg {
+      scale: .5;
+      fill: #fff;
+    }
+  }
 }

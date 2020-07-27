@@ -7,7 +7,7 @@ const Footer = () => (
   <footer className="footer">
     <Container className="footer__inner">
       <h1 className="footer__text">© 2020, We Are The future. All rights reserved</h1>
-      <h1 className="footer__text">wearethefuture@gmail.com</h1>
+      <h1 className="footer__text">weathefuture@gmail.com</h1>
 
       <div className="footer__logo">
         <ReactSVG src='/assets/svgs/logos/footer-logo.svg' />
