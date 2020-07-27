@@ -26,15 +26,19 @@ const AgencyBanner = () => (
 
 const About = () => (
   <div className="about">
+    <div className="main-page-bg-2">
+      <Container fluid>
+        <h1 className="about__title">Who we are?</h1>
+
+        <div className="about__sub-title">
+          <p>Ambitios Ukrainian IT company,</p>
+          <p>starting the  path of digital transformation</p>
+          <p>of your ideas</p>
+        </div>
+      </Container>
+    </div>
+
     <Container fluid>
-      <h1 className="about__title">Who we are?</h1>
-
-      <div className="about__sub-title">
-        <p>Ambitios Ukrainian IT company,</p>
-        <p>starting the  path of digital transformation</p>
-        <p>of your ideas</p>
-      </div>
-
       <div className="we-can-better">
         <Row>
           <Col xs={12} sm={3} className="we-can-better__info">We’ll help you grow and enhance your business using best practices staring from usage of modern technologies and ending with best Agile practices for organizational needs.</Col>
@@ -107,10 +111,14 @@ const Contact = () => (
 const App = () => (
 <>
   <AgencyBanner />
-  <About />
-  <Technologies />
-  <Developers />
-  <WorkWith />
+  <div className="main-page-bg-1">
+    <About />
+    <Technologies />
+  </div>
+  <div className="main-page-bg-3">
+    <Developers />
+    <WorkWith />
+  </div>
   <Contact />
   <Footer />
 </>

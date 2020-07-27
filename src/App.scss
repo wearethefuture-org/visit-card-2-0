@@ -1,5 +1,29 @@
 @import './vars';
 
+.main-page-bg-1 {
+  background: linear-gradient(180deg, #002406 0%, rgba(0, 36, 6, 0.871589) 35.76%, rgba(0, 36, 6, 0) 100%);
+}
+
+.main-page-bg-2 {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.88;
+}
+
+.main-page-bg-3 {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #002406 0%, rgba(0, 36, 6, 0.871589) 35.76%, rgba(0, 36, 6, 0) 100%);
+    transform: rotate(180deg);
+  }
+}
+
 .agency-banner {
   position: relative;
   height: 100vh;
@@ -56,12 +80,11 @@
 }
 
 .about {
-  padding-top: 130px;
   color: #FFFFFF;
   text-align: center;
-  background-color: #051207;
 
   &__title {
+    padding-top: 9rem;
     font-weight: 500;
     font-size: 45px;
     text-shadow: 0px 4px 4px rgba(1, 255, 42, 0.46);
@@ -127,7 +150,6 @@
 .technologies {
   padding-top: 7rem;
   color: #fff;
-  background-color: #051207;
 
   &__title {
     font-weight: 500;
@@ -149,7 +171,6 @@
 
 .developers {
   padding: 7rem 0;
-  background-color: #051207;
 
   &__title {
     margin-bottom: 8rem;
@@ -213,14 +234,27 @@
 }
 
 .contact-us {
+  position: relative;
+  overflow: hidden;
   padding: 7rem 10rem;
-  background-color: #062a0c;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #002406 0%, rgba(0, 36, 6, 0.871589) 75%, rgba(0, 36, 6, 0) 100%);
+    height: 2000px;
+  }
 
   @media (max-width: $sm) {
     padding: 2rem 1rem;
   }
 
   &__inner {
+    position: relative;
     padding: 3rem 4rem;
     background: rgba($color: #000000, $alpha: .3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
