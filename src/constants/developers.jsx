@@ -31,7 +31,7 @@ const DEVELOPERS = [
   },
   {
     img: '/assets/imgs/devs/sergei.png',
-    name: 'Sergei ',
+    name: 'Sergei Schur',
     profession: 'Scrum master'
   }
 ];
