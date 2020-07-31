@@ -8,7 +8,7 @@ import './App.scss';
 import InfoCard from './components/InfoCard/InfoCard';
 import PersonCard from './components/PersonCard/PersonCard';
 import GridList from './components/GridList/GridList';
-import ContactForm from './components/ContactForm/ContactForm';
+// import ContactForm from './components/ContactForm/ContactForm';
 import Footer from './components/Footer/Footer';
 
 import TECHNOLOGIES from './constants/technologies';
@@ -147,7 +147,7 @@ const Portfolio = () => (
             className="portfolio-item__img"
           />
           <h1 className="portfolio-item__title">Carswork</h1>
-          <a href="https://carswork.com" target="_blank">
+          <a href="https://carswork.com" rel="noopener noreferrer" target="_blank">
             <button className="btn portfolio-item__btn">
               Open
             </button>
@@ -163,7 +163,7 @@ const Portfolio = () => (
             }}
           />
           <h1 className="portfolio-item__title">Connectoro</h1>
-          <a href="https://app.connectoro.io" target="_blank">
+          <a href="https://app.connectoro.io" rel="noopener noreferrer" target="_blank">
             <button className="btn portfolio-item__btn">
               Open
             </button>
