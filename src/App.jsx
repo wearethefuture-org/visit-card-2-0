@@ -8,7 +8,7 @@ import './App.scss';
 import InfoCard from './components/InfoCard/InfoCard';
 import PersonCard from './components/PersonCard/PersonCard';
 import GridList from './components/GridList/GridList';
-// import ContactForm from './components/ContactForm/ContactForm';
+import ContactForm from './components/ContactForm/ContactForm';
 import Footer from './components/Footer/Footer';
 
 import TECHNOLOGIES from './constants/technologies';
