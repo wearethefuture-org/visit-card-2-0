@@ -135,6 +135,45 @@ const Contact = () => (
   </div>
 );
 
+const Portfolio = () => (
+  <div className="portfolio">
+    <Container fluid>
+      <h1 className="portfolio__title">Portfolio</h1>
+      <Row style={{ justifyContent: 'center' }}>
+        <Col xs={12} sm={{ span: 4 }} className="portfolio-item">
+          <img
+            src="/assets/imgs/portfolio/carswork.png"
+            alt="carswork"
+            className="portfolio-item__img"
+          />
+          <h1 className="portfolio-item__title">Carswork</h1>
+          <a href="https://carswork.com" target="_blank">
+            <button className="btn portfolio-item__btn">
+              Open
+            </button>
+          </a>
+        </Col>
+        <Col xs={12} sm={{ span: 4, offset: 2 }}>
+          <img
+            src="https://stage.connectoro.io/assets/images/logos/fuse.svg"
+            alt=""
+            style={{
+              width: '100%',
+              height: 290
+            }}
+          />
+          <h1 className="portfolio-item__title">Connectoro</h1>
+          <a href="https://app.connectoro.io" target="_blank">
+            <button className="btn portfolio-item__btn">
+              Open
+            </button>
+          </a>
+        </Col>
+      </Row>
+    </Container>
+  </div>
+);
+
 const App = () => {
   const moveToAbout = () => {
     window.scrollTo({
@@ -156,6 +195,7 @@ const App = () => {
         <Developers />
         <WorkWith />
       </div>
+      <Portfolio />
       <Contact />
       <Footer />
     </>
