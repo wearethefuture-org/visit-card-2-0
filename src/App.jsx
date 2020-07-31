@@ -8,7 +8,7 @@ import './App.scss';
 import InfoCard from './components/InfoCard/InfoCard';
 import PersonCard from './components/PersonCard/PersonCard';
 import GridList from './components/GridList/GridList';
-// import ContactForm from './components/ContactForm/ContactForm';
+import ContactForm from './components/ContactForm/ContactForm';
 import Footer from './components/Footer/Footer';
 
 import TECHNOLOGIES from './constants/technologies';
@@ -54,8 +54,8 @@ const About = () => (
 
 const Technologies = () => (
   <div className="technologies">
+    <h1 className="technologies__title">Technologies</h1>
     <Container fluid>
-      <h1 className="technologies__title">Technologies</h1>
       <div className="technologies__sub-title">
         <p>We are working with different modern technologies you can</p>
         <p>be interested in:</p>
@@ -80,7 +80,7 @@ const Developers = () => (
       <div className="developers__bg">Team</div>
       <Row>
         {DEVELOPERS.map(dev => (
-          <Col xs={12} md={3} key={dev.name}>
+          <Col xs={12} sm={6} lg={3} key={dev.name}>
             <PersonCard {...dev} />
           </Col>
         ))}
@@ -104,33 +104,7 @@ const Contact = () => (
       <h1 className="contact-us__title">Feel free to contact Us!</h1>
       <h1 className="contact-us__subtitle">We’ll be glad to assist you with the implementation of your dreams!</h1>
 
-      <Row className="contact-us__social">
-        <Col>
-          <a href="mailto:weathefuture@gmail.com">
-            <ReactSVG src='/assets/svgs/social/gmail.svg' />
-          </a>
-          <h1>Gmail</h1>
-          <a href="mailto:weathefuture@gmail.com">
-            <h2>weathefuture@gmail.com</h2>
-          </a>
-        </Col>
-
-        <Col>
-          <a href="https://www.linkedin.com/in/ihor-zharyi-6892aa168/">
-            <ReactSVG src='/assets/svgs/social/link.svg' />
-          </a>
-          <h1>Linkedin</h1>
-          <a href="https://www.linkedin.com/in/ihor-zharyi-6892aa168/">
-            <h2>Open</h2>
-          </a>
-        </Col>
-
-        <Col>
-          <ReactSVG src='/assets/svgs/social/skype.svg' />
-          <h1>Skype</h1>
-          <h2>Login: sixteen883</h2>
-        </Col>
-      </Row>
+      <ContactForm />
     </div>
   </div>
 );
@@ -153,14 +127,11 @@ const Portfolio = () => (
             </button>
           </a>
         </Col>
-        <Col xs={12} sm={{ span: 4, offset: 2 }}>
+        <Col xs={12} sm={{ span: 4, offset: 2 }} className="portfolio-item">
           <img
             src="https://stage.connectoro.io/assets/images/logos/fuse.svg"
-            alt=""
-            style={{
-              width: '100%',
-              height: 290
-            }}
+            alt="connectoro"
+            className="portfolio-item__img"
           />
           <h1 className="portfolio-item__title">Connectoro</h1>
           <a href="https://app.connectoro.io" rel="noopener noreferrer" target="_blank">
