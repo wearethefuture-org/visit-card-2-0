@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
@@ -16,12 +17,12 @@ const frontFolder = path.join(__dirname, 'build');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 
 app.post('/send', function(req, res) {
   return transporter.sendMail({
     from: `${req.body.name} <${req.body.email}>`,
-    // to: 'weathefuture@gmail.com',
-    to: 'pavel.makk.old@gmail.com',
+    to: 'weathefuture@gmail.com',
     subject: req.body.message
   })
   .finally(() => {
