@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { Formik } from 'formik';
 import Axios from 'axios';
 
-const baseUrl = `https://${window.location.hostname}:8080`
+const baseUrl = window.location.origin;
 
 const ContactForm = () => (
   <div className="contact-form">
