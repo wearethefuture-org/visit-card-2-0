@@ -15,7 +15,7 @@ const DEVELOPERS = [
     profession: 'Chief Executive Officer'
   },
   {
-    img: '/assets/imgs/devs/maxim.png',
+    img: '/assets/imgs/devs/maxim.jpg',
     name: 'Maxim Polishchuk',
     profession: 'Senior DevOps Engineer'
   },
