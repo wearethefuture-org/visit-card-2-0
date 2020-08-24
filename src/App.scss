@@ -91,6 +91,11 @@
     position: absolute;
     bottom: 2rem;
     cursor: pointer;
+    transition: transform .3s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 }
 
@@ -287,6 +292,7 @@
     text-align: center;
     letter-spacing: 1.188px;
     color: #FFD412;
+    font-weight: 500;
   }
 }
 
@@ -425,8 +431,9 @@
       position: relative;
       left: 50%;
       transform: translateX(-50%);
-      background-color: #fff;
       padding: 0.375rem 2rem;
+      color: #fff;
+      background-color: #FFD412;
     }
   }
 }
