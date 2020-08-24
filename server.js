@@ -22,7 +22,7 @@ app.use(cors());
 app.post('/send', function(req, res) {
   return transporter.sendMail({
     from: `${req.body.name} <${req.body.email}>`,
-    to: 'wearefuture2020.03@gmail.com',
+    to: 'weathefuture@gmail.com',
     subject: req.body.message
   })
   .finally(() => {
