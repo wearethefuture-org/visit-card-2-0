@@ -36,14 +36,19 @@ const DEVELOPERS = [
   },
   {
     img: '/assets/imgs/devs/oles.jpeg',
-    name: 'Oles Hryst',
+    name: 'Oles Hrytseniuk',
     profession: 'Junior Full-stack Developer'
   },
   {
     img: '/assets/imgs/devs/igor_n.jpg',
     name: 'Igor Nerovnyi',
     profession: 'Middle Front-End Developer'
-  }
+  },
+  {
+    img: '/assets/imgs/devs/kyrylo_p.png',
+    name: 'Kyrylo Potanin',
+    profession: 'Junior Full-stack Developer'
+  },
 ];
 
 export default DEVELOPERS;
