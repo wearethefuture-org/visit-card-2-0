@@ -74,7 +74,7 @@
     text-align: center;
 
     @media (max-width: $sm) {
-      font-size: 50px;
+      font-size: 42px;
     }
   }
 
@@ -82,7 +82,7 @@
     margin-top: 4rem;
 
     @media (max-width: $sm) {
-      scale: .6;
+      transform:scale(0.8);
       margin-top: 2rem;
     }
   }
@@ -292,7 +292,7 @@
     text-align: center;
     letter-spacing: 1.188px;
     color: #FFD412;
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
