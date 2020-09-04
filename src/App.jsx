@@ -27,7 +27,7 @@ const About = () => (
   <div className="about">
     <div className="main-page-bg-2">
       <Container fluid>
-        <h1 className="about__title">Who we are?</h1>
+        <h2 className="about__title">Who we are?</h2>
 
         <div className="about__sub-title">
           <p>Ambitios Ukrainian IT company,</p>
@@ -40,10 +40,11 @@ const About = () => (
     <Container fluid>
       <div className="we-can-better">
         <Row>
-          <Col xs={12} sm={3} className="we-can-better__info">We’ll help you grow and enhance your business using best practices staring from usage of modern technologies and ending with best Agile practices for organizational needs.</Col>
+          <Col xs={12} sm={3} 
+          className="we-can-better__info">We’ll help you grow and enhance your business using best practices staring from usage of modern technologies and ending with best Agile practices for organizational needs.</Col>
           <Col xs={12} sm={6} className="we-can-better__img">
             <img src="/assets/imgs/we-can-better.jpg" alt="We can better"/>
-            <h1 className="we-can-better__title">We can better</h1>
+            <h2 className="we-can-better__title">We can better</h2>
           </Col>
           <Col xs={12} sm={3} className="we-can-better__info">10+ of true professionals with solid technical background in different domains - SaaS applications, complex web projects, DevOps solutions.</Col>
         </Row>
@@ -54,7 +55,7 @@ const About = () => (
 
 const Technologies = () => (
   <div className="technologies">
-    <h1 className="technologies__title">Technologies</h1>
+    <h2 className="technologies__title">Technologies</h2>
     <Container fluid>
       <div className="technologies__sub-title">
         <p>We are working with different modern technologies you can</p>
@@ -75,7 +76,7 @@ const Technologies = () => (
 const Developers = () => (
   <div className="developers">
     <Container fluid>
-      <h1 className="developers__title">*** Drill-down of our technical skills can be provided in a separate discussion.</h1>
+      <h2 className="developers__title">*** Drill-down of our technical skills can be provided in a separate discussion.</h2>
 
       <div className="developers__bg">Team</div>
       <Row>
@@ -92,7 +93,7 @@ const Developers = () => (
 const WorkWith = () => (
   <div className="work-with">
     <Container fluid>
-      <h1 className="work-with__title">Who we work with</h1>
+      <h2 className="work-with__title">Who we work with</h2>
       <GridList items={WORKS_WITH} />
     </Container>
   </div>
@@ -101,8 +102,8 @@ const WorkWith = () => (
 const Contact = () => (
   <div className="contact-us">
     <div className="contact-us__inner">
-      <h1 className="contact-us__title">Feel free to contact Us!</h1>
-      <h1 className="contact-us__subtitle">We’ll be glad to assist you with the implementation of your dreams!</h1>
+      <h2 className="contact-us__title">Feel free to contact Us!</h2>
+      <h2 className="contact-us__subtitle">We’ll be glad to assist you with the implementation of your dreams!</h2>
 
       <ContactForm />
     </div>
@@ -112,7 +113,7 @@ const Contact = () => (
 const Portfolio = () => (
   <div className="portfolio">
     <Container fluid>
-      <h1 className="portfolio__title">Portfolio</h1>
+      <h2 className="portfolio__title">Portfolio</h2>
       <Row style={{ justifyContent: 'center' }}>
         <Col xs={12} sm={{ span: 4 }} className="portfolio-item">
           <img
@@ -120,7 +121,7 @@ const Portfolio = () => (
             alt="carswork"
             className="portfolio-item__img"
           />
-          <h1 className="portfolio-item__title">Carswork</h1>
+          <h2 className="portfolio-item__title">Carswork</h2>
           <a href="https://carswork.com" rel="noopener noreferrer" target="_blank">
             <button className="btn portfolio-item__btn">
               Open
@@ -133,7 +134,7 @@ const Portfolio = () => (
             alt="connectoro"
             className="portfolio-item__img"
           />
-          <h1 className="portfolio-item__title">Connectoro</h1>
+          <h2 className="portfolio-item__title">Connectoro</h2>
           <a href="https://app.connectoro.io" rel="noopener noreferrer" target="_blank">
             <button className="btn portfolio-item__btn">
               Open
