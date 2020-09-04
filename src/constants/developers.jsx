@@ -38,6 +38,11 @@ const DEVELOPERS = [
     img: '/assets/imgs/devs/oles.jpeg',
     name: 'Oles Hryst',
     profession: 'Junior Full-stack Developer'
+  },
+  {
+    img: '/assets/imgs/devs/igor_n.jpg',
+    name: 'Igor Nerovnyi',
+    profession: 'Middle Front-End Developer'
   }
 ];
 
