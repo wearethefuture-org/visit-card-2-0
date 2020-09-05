@@ -49,6 +49,17 @@ const DEVELOPERS = [
     name: 'Kyrylo Potanin',
     profession: 'Junior Full-stack Developer'
   },
+  {
+    img: '/assets/imgs/devs/nadiia_v.png',
+    name: 'Nadiia Voloshyna',
+    profession: 'Junior Full-stack Developer'
+  },
+  {
+    img: '/assets/imgs/devs/alexandr_m.png',
+    name: 'Aleksandr Movchan',
+    profession: 'Strong Junior Full-stack Developer'
+  },
+  
 ];
 
 export default DEVELOPERS;
