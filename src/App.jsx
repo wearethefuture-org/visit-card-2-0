@@ -123,7 +123,17 @@ const Portfolio = () => (
             className="portfolio-item__img"
           />
           <h2 className="portfolio-item__title">Carswork</h2>
-          <Popup />
+          <Popup 
+            popupTitle="Cars work"
+            popupSiteLink="https://carswork.com"
+            popupSiteLogo="/assets/imgs/laptop2.png"
+            popupMissionTextFirst="We’ll help you grow and enhance your business using best practices staring from usage of modern technologies and ending with best Agile practices for organizational needs."
+            popupMissionTextSecond="We’ll help you grow and enhance your business using best practices staring from usage of modern technologies and ending with best Agile practices for organizational needs."
+            popupTechnologiesDB="PostgreSQL / MongoDB / MySQL / DynamoDb / Elasticsearch / Redis"
+            popupTechnologiesGeneral="OOP & OOD / TDD & BDD / API (REST API & Postman & Swagger & API Doc)"
+            popupTechnologiesFE="Angular (Typescript) & React & Net.JS Frameworks / HTML / CSS (SCSS, LESS, bootstrap, angular material), Javascript (ES6 - ES9)"
+            popupTechnologiesBE="Node.js (Koa, express, meteor, hapi, sails, nestjs)"
+          />
         </Col>
         <Col xs={12} sm={{ span: 4, offset: 2 }} className="portfolio-item">
           <img
