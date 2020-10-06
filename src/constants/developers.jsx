@@ -12,12 +12,12 @@ const DEVELOPERS = [
   {
     img: '/assets/imgs/devs/semen.png',
     name: 'Semen Yevmenenko',
-    profession: 'Chief Executive Officer'
+    profession: 'Solution Architect'
   },
   {
     img: '/assets/imgs/devs/maxim.jpg',
     name: 'Maxim Polishchuk',
-    profession: 'Senior DevOps Engineer'
+    profession: 'Chief Executive Officer'
   },
   {
     img: '/assets/imgs/devs/bogdan.png',
@@ -31,8 +31,13 @@ const DEVELOPERS = [
   },
   {
     img: '/assets/imgs/devs/sergei.png',
-    name: 'Sergei Schur',
+    name: 'Sergey Shchur',
     profession: 'Project Manager'
+  },
+  {
+    img: '/assets/imgs/devs/veronika_t.jpg',
+    name: 'Veronika Tokarenko',
+    profession: 'Junior Project Manager'
   },
   {
     img: '/assets/imgs/devs/oles.jpeg',
@@ -50,16 +55,26 @@ const DEVELOPERS = [
     profession: 'Junior Full-stack Developer'
   },
   {
-    img: '/assets/imgs/devs/nadiia_v.png',
-    name: 'Nadiia Voloshyna',
-    profession: 'Junior Full-stack Developer'
-  },
-  {
     img: '/assets/imgs/devs/alexandr_m.png',
     name: 'Aleksandr Movchan',
     profession: 'Strong Junior Full-stack Developer'
   },
-  
+  {
+    img: '/assets/imgs/devs/nikolay_s.jpg',
+    name: 'Nikolay Strashok',
+    profession: 'Middle Front-End Developer'
+  },
+  {
+    img: '/assets/imgs/devs/nata_p.jpg',
+    name: 'Nata Pavlovska',
+    profession: 'UI Designer, Illustrator'
+  },
+  {
+    img: '/assets/imgs/devs/denis.jpg',
+    name: 'Denis Tsymbalenko',
+    profession: 'Junior Front-End Developer'
+  },
+
 ];
 
 export default DEVELOPERS;
