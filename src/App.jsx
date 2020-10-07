@@ -31,7 +31,7 @@ const About = () => (
         <h2 className="about__title">Who we are?</h2>
 
         <div className="about__sub-title">
-          <p>Ambitios Ukrainian IT company,</p>
+          <p>Ambitious Ukrainian IT company,</p>
           <p>starting the  path of digital transformation</p>
           <p>of your ideas</p>
         </div>
